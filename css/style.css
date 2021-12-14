@@ -1,0 +1,88 @@
+/* REGLAS POR DEFECTO */
+
+body {
+    margin: 0;
+    /* Quitar el margen por defecto del body */
+}
+
+* {
+    box-sizing: border-box;
+    /* Que el padding no cuente como ancho */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    /* Si tenemos una fila, que los elementos de abajo empiecen siempre en la misma línea */
+}
+
+
+/* REGLAS DE FILAS / COLUMNAS */
+
+.column-1 {
+    width: 100%;
+    float: left;
+    /* Columna del 100% */
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    /* Columna del 50% */
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+    /* Columna del 33.33% */
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    /* Columna del 25% */
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+    /* Columna del 20% */
+}
+
+p {
+    text-align: center;
+}
+
+
+/* OTRAS REGLAS */
+
+.cl1 {
+    background-color: rgba(243, 28, 28, 0.767);
+    color: white;
+}
+
+.cl2 {
+    background-color: rgba(91, 196, 42, 0.568);
+    color: white;
+}
+
+.cl3 {
+    background-color: rgba(31, 31, 190, 0.562);
+    color: white;
+}
+
+
+/* MEDIA QUERY's */
+
+@media only screen and (max-width: 600px) {
+    .column-3 {
+        width: 100%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    #totalHorizontal {
+        width: 100%;
+    }
+}
